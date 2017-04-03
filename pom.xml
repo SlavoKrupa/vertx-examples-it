@@ -71,7 +71,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-stack-manager</artifactId>
-      <version>${vertx.version}</version>
+        <version>${project.version}</version>
       <classifier>full</classifier>
       <type>zip</type>
       <scope>provided</scope>

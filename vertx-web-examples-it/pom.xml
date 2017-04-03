@@ -234,6 +234,9 @@
               <profiles>
                 <profile>staging</profile>
               </profiles>
+              <properties>
+                <vertx.version>${vertx.version}</vertx.version>
+              </properties>
             </configuration>
           </execution>
 
@@ -257,6 +260,7 @@
               </profiles>
               <properties>
                 <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+                <vertx.version>${vertx.version}</vertx.version>
               </properties>
             </configuration>
           </execution>

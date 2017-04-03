@@ -13,6 +13,7 @@
   <properties>
     <vertx.version>3.4.1</vertx.version>
     <vertx.examples.branch>3.4.1-staging</vertx.examples.branch>
+    <vertx.examples.repository>https://github.com/vert-x3/vertx-examples</vertx.examples.repository>
   </properties>
 
   <profiles>
@@ -53,6 +54,19 @@
       </modules>
     </profile>
   </profiles>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.vertx</groupId>
+        <artifactId>vertx-dependencies</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>io.vertx</groupId>

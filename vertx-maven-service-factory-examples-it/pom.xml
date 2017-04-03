@@ -32,7 +32,7 @@
             </goals>
             <phase>process-sources</phase>
             <configuration>
-              <url>https://github.com/vert-x3/vertx-examples/archive/${vertx.examples.branch}.zip</url>
+              <url>${vertx.examples.repository}/archive/${vertx.examples.branch}.zip</url>
               <prefix>vertx-examples-${vertx.examples.branch}</prefix>
               <includes>
                 <include>**/${example.dir}/**/*</include>
